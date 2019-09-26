@@ -41,4 +41,22 @@ print('Finished')
 
 print('sum function=', mySum(1,2))
 
+# --- Algorithm Averaging ---
+
+tab = [12, 15, 8, 14, 13]
+
+def average_above_zero(tab) :
+    pos_val_sum = 0
+    nbr_element = 0
+    moy = 0
+    for id in range(len(tab)) :
+        if tab[id] > 0 :
+            nbr_element += 1
+            pos_val_sum += tab[id]
+            
+    moy = pos_val_sum / nbr_element       
+    return moy
+    
+print('sum function=', average_above_zero(tab))    
+    
 
