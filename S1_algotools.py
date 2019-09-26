@@ -14,6 +14,15 @@ myVariable = 0
 print('My variable = ', myVariable)
 
 # --- Algorithm 1 ---
+
+def mySum(param1, param2) : 
+    '''
+    Function that sums two input params (int value)
+    
+    '''
+    return param1 + param2
+
+
 import numpy as np
 
 tab_list=[1,2,3,4,5,6,7]
@@ -29,5 +38,7 @@ for id in range(len(tab_from_list)) :
         print('Yessaï')
         
 print('Finished')
+
+print('sum function=', mySum(1,2))
 
 
