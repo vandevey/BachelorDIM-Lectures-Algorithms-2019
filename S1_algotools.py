@@ -58,5 +58,19 @@ def average_above_zero(tab) :
     return moy
     
 print('sum function=', average_above_zero(tab))    
+
+# --- Algorithm Max ---
     
+tab = [12, 15, 8, 14, 18]
+
+def max_value(tab) :
+    max_val = 0
+    
+    for i in range(len(tab)) :
+        if tab[i] > max_val :
+            max_val = tab[i]
+            
+    return max_val
+    
+print('sum function=', max_value(tab))    
 
