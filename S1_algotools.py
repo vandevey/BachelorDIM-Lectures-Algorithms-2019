@@ -17,8 +17,7 @@ print('My variable = ', myVariable)
 
 def mySum(param1, param2) : 
     '''
-    Function that sums two input params (int value)
-    
+    Function that sums two input params int value
     '''
     return param1 + param2
 
@@ -46,6 +45,8 @@ print('sum function=', mySum(1,2))
 tab = [12, 15, 8, 14, 13]
 
 def average_above_zero(tab) :
+    if not(isinstance(tab, list)) :
+        raise ValueError('average_above_zero, expected a list as input')
     pos_val_sum = 0
     nbr_element = 0
     moy = 0
@@ -64,8 +65,10 @@ print('sum function=', average_above_zero(tab))
 tab = [12, 15, 8, 14, 18]
 
 def max_value(tab) :
+    if not(isinstance(tab, list)) :
+        raise ValueError('max_value, expected a list as input')
+        
     max_val = 0
-    
     for i in range(len(tab)) :
         if tab[i] > max_val :
             max_val = tab[i]
@@ -79,11 +82,17 @@ print('sum function=', max_value(tab))
 tab = [12, 15, 8, 14, 18]
 
 def reverse_tab(tab) :
+    if not(isinstance(tab, list)) :
+        raise ValueError('reverse_tab, expected a list as input')
     
-    tab = tab.reverse
+    tab.reverse()
         
     return tab
     
 print('sum function=', reverse_tab(tab))  
+
+# --- Algorithm Bounding box ---  
+
+
 
 
