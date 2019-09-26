@@ -72,5 +72,18 @@ def max_value(tab) :
             
     return max_val
     
-print('sum function=', max_value(tab))    
+print('sum function=', max_value(tab))  
+
+# --- Algorithm Reverse table ---  
+
+tab = [12, 15, 8, 14, 18]
+
+def reverse_tab(tab) :
+    
+    tab = tab.reverse
+        
+    return tab
+    
+print('sum function=', reverse_tab(tab))  
+
 
