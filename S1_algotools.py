@@ -47,6 +47,9 @@ tab = [12, 15, 8, 14, 13]
 def average_above_zero(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('average_above_zero, expected a list as input')
+    if (len(tab) == 0) :
+        raise ValueError('average_above_zero, can\'t use empty list as input')
+   
     pos_val_sum = 0
     nbr_element = 0
     moy = 0
@@ -67,7 +70,9 @@ tab = [12, 15, 8, 14, 18]
 def max_value(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('max_value, expected a list as input')
-        
+    if (len(tab) == 0) :
+        raise ValueError('max_value, can\'t use empty list as input')
+     
     max_val = 0
     for i in range(len(tab)) :
         if tab[i] > max_val :
@@ -84,7 +89,9 @@ tab = [12, 15, 8, 14, 18]
 def reverse_tab(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('reverse_tab, expected a list as input')
-    
+    if (len(tab) == 0) :
+        raise ValueError('reverse_tab, can\'t use empty list as input')
+     
     tab.reverse()
         
     return tab
