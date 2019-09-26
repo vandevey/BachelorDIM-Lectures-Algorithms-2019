@@ -6,4 +6,7 @@ Created on Thu Sep 26 14:17:01 2019
 @author: alben
 """
 
-S1_algotools.py
+print('My first python3 trials')
+
+myVariable=0
+print('MyVariable=',myVariable)
