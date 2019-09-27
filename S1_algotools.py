@@ -48,8 +48,10 @@ def average_above_zero(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('average_above_zero, expected a list as input')
     if (len(tab) == 0) :
-        raise ValueError('average_above_zero, can\'t use empty list as input')
-   
+        raise ValueError('average_above_zero, can\'t use an empty list as input')
+    if not(isinstance(tab[0], (int, float))) :
+        raise ValueError('average_above_zero, expected a list as input')
+     
     pos_val_sum = 0
     nbr_element = 0
     moy = 0
@@ -71,7 +73,9 @@ def max_value(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('max_value, expected a list as input')
     if (len(tab) == 0) :
-        raise ValueError('max_value, can\'t use empty list as input')
+        raise ValueError('max_value, can\'t use an empty list as input')
+    if not(isinstance(tab[0], (int, float))) :
+        raise ValueError('max_value, expected a list as input')
      
     max_val = 0
     for i in range(len(tab)) :
@@ -90,8 +94,10 @@ def reverse_tab(tab) :
     if not(isinstance(tab, list)) :
         raise ValueError('reverse_tab, expected a list as input')
     if (len(tab) == 0) :
-        raise ValueError('reverse_tab, can\'t use empty list as input')
-     
+        raise ValueError('reverse_tab, can\'t use an empty list as input')
+    if not(isinstance(tab[0], (int, float))) :
+        raise ValueError('reverse_tab, expected a list as input')
+      
     tab.reverse()
         
     return tab
