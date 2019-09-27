@@ -38,7 +38,7 @@ for id in range(len(tab_from_list)) :
         
 print('Finished')
 
-print('sum function=', mySum(1,2))
+print('Sum function=', mySum(1,2))
 
 # --- Algorithm Averaging ---
 
@@ -63,7 +63,7 @@ def average_above_zero(tab) :
     moy = pos_val_sum / nbr_element       
     return moy
     
-print('sum function=', average_above_zero(tab))    
+print('Average above zero =', average_above_zero(tab))    
 
 # --- Algorithm Max ---
     
@@ -84,7 +84,7 @@ def max_value(tab) :
             
     return max_val
     
-print('sum function=', max_value(tab))  
+print('Valeur max =', max_value(tab))  
 
 # --- Algorithm Reverse table ---  
 
@@ -102,9 +102,30 @@ def reverse_tab(tab) :
         
     return tab
     
-print('sum function=', reverse_tab(tab))  
+print('Tableaux inverser =', reverse_tab(tab))  
 
 # --- Algorithm Bounding box ---  
+
+
+# --- Algorithm Random array filling ---  
+
+# --- Remove whitespace characters in a string  ---  
+
+sentence = ' Le Python c\'est mieux que ce que je pensais'
+
+def remove_whitespace(sentence) :
+    if (len(sentence) == 0) :
+        raise ValueError('remove_whitespace, can\'t use an empty string as input')
+    if not(isinstance(tab[0], (int, float))) :
+        raise ValueError('remove_whitespace, expected a string as input')
+    new_sentence = 0
+    new_sentence = sentence.replace(" ", "")
+    return new_sentence
+
+print('Sentence whithout spaces =', remove_whitespace(sentence))  
+
+
+
 
 
 
