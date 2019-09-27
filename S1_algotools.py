@@ -7,7 +7,7 @@ Created on Thu Sep 26 14:18:46 2019
 
 # --- Premiers pas ---
 
-print('Galettes saucisses')
+print('Galettes saucisses ♥')
 
 myVariable = 0
 
@@ -94,26 +94,45 @@ print('Valeur max =', max_value(tab))
 
 # --- Algorithm Reverse table ---  
 
-tab = [12, 15, 8, 14, 18]
+tab = [12, 15, 8, 14, 18, 15]
 
 def reverse_tab(tab) :
+    
     if not(isinstance(tab, list)) :
         raise ValueError('reverse_tab, expected a list as input')
     if (len(tab) == 0) :
         raise ValueError('reverse_tab, can\'t use an empty list as input')
     if not(isinstance(tab[0], (int, float))) :
         raise ValueError('reverse_tab, expected a list as input')
-      
-    tab.reverse()
-        
+     
+    # tab.reverse()
+  
+    buffer = len(tab)
+    turns = int(buffer//2)
+    for id in range(turns) :
+        tmp = tab[id]
+        oppId=buffer-1- id
+        tab[id] = tab[oppId]
+        tab[oppId] = tmp
+    
     return tab
     
+print('Tableaux  =', tab)     
 print('Tableaux inverser =', reverse_tab(tab))  
 
 # --- Algorithm Bounding box ---  
 
+matrix = np.zeros((10,10), dtype = np.int32)
+matrix[3:6, 4:8] = np.ones((3,4), dtype = np.int32)
+
+for idrow in range(matrix.shape[0]) :
+    for idcol in range(matrix.shape[1]) :
+        pixVal = matrix[idrow, idcol]
+        
+        
 
 # --- Algorithm Random array filling ---  
+
 
 # --- Remove whitespace characters in a string  ---  
 
