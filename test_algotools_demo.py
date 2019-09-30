@@ -25,4 +25,3 @@ def test_average_working():
     test, lastID = test_s1.average_above_zero(tab_list)
     assert test == 10
     
-test_average_working()
