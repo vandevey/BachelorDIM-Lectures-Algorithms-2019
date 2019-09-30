@@ -21,6 +21,12 @@ def inc_(x):
 # --- Average test ---
                     
 def test_average_working():
-    tab_list=[5,6,7,13,14,15]  
-    assert test_s1.average_above_zero(tab_list) == 10.0
+    tab_av=[5,6,7,13,14,15]  
+    assert test_s1.average_above_zero(tab_av) == 10.0
+    
+# --- Max test ---
+                    
+def test_max_working():
+    tab_max=[5,6,7,13,14,15]  
+    assert test_s1.average_above_zero(tab_max) == 15
     
