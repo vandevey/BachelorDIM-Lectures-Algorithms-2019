@@ -13,9 +13,10 @@ import pytest
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         1/0
+'''        
 def inc_(x):
     return x+1
-
+'''
 def test_divide_by_zero():
     with pytest.raises(ZeroDivisionError):
         1/0
