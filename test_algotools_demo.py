@@ -17,10 +17,7 @@ def test_divide_by_zero():
 def inc_(x):
     return x+1
 '''
-def test_divide_by_zero():
-    with pytest.raises(ZeroDivisionError):
-        1/0
-        
+   
 # --- Average test ---
         
 tab_list=[5,6,7,13,14,15]       
