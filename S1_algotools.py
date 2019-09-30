@@ -52,13 +52,15 @@ def average_above_zero(tab_average) :
     Return: the average of positive values
     Raises ValueError if input param is not a list
     '''
+    
+    '''
     if not(isinstance(tab_average, list)) :
         raise ValueError('average_above_zero, expected a list as input')
     if (len(tab_average) == 0) :
         raise ValueError('average_above_zero, can\'t use an empty list as input')
     if not(isinstance(tab_average[0], (int, float))) :
         raise ValueError('average_above_zero, expected a list as input')
-     
+     '''
     pos_val_sum = 0
     nbr_element = 0
     moy = 0
@@ -149,7 +151,6 @@ def remove_whitespace(sentence) :
     return new_sentence
 
 print('Sentence whithout spaces =', remove_whitespace(sentence))  
-
 
 # --- Random item selection  ---  
 
