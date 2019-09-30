@@ -6,24 +6,23 @@ Created on Thu Sep 26 14:18:46 2019
 """
 
 # --- Premiers pas ---
-
+'''
 print('Galettes saucisses ♥')
 
 myVariable = 0
 
 print('My variable = ', myVariable)
-
+'''
 # --- Algorithm 1 ---
-
+'''
 def mySum(param1, param2) : 
-    '''
+   
     Function that sums two input params int value
-    '''
+   
     return param1 + param2
-
-
+'''
 import numpy as np
-
+'''
 tab_list=[1,2,3,4,5,6,7]
 
 tab_zeros = np.zeros(12,dtype = np.int32)
@@ -39,7 +38,7 @@ for id in range(len(tab_from_list)) :
 print('Finished')
 
 print('Sum function=', mySum(1,2))
-
+'''
 # --- Algorithm Averaging ---
 
 tab = [12, 15, 8, 14, 13]
