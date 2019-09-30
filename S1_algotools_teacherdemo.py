@@ -6,19 +6,20 @@ Created on Thu Sep 26 14:18:46 2019
 """
 
 # --- Premiers pas ---
-
+'''
 print('Galettes saucisses')
 
 myVariable = 0
 
 print('My variable = ', myVariable)
 
+'''
 # --- Algorithm 1 ---
-
+'''
 def mySum(param1, param2) : 
-    '''
+
     Function that sums two input params int value
-    '''
+    
     return param1 + param2
 
 
@@ -39,6 +40,7 @@ for id in range(len(tab_from_list)) :
 print('Finished')
 
 print('Sum function=', mySum(1,2))
+'''
 
 # --- Algorithm Averaging ---
 
