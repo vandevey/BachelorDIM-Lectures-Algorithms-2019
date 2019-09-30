@@ -26,7 +26,13 @@ def test_average_working():
     
 # --- Max test ---
                     
-def max_value():
+def test_max_working():
     tab_max=[5,6,7,13,14,15]  
-    assert test_s1.test_max_working(tab_max) == 15
+    assert test_s1.max_value(tab_max) == 15
+   
+# --- Reverse table test ---
+                    
+def test_reverse_tab():
+    tab_max=[1,2,3,4,5,6]
+    assert test_s1.reverse_tab(tab_max) == [6,5,4,3,2,1]
     
