@@ -79,7 +79,7 @@ print('Average above zero =', average_above_zero(tab_average))
 tab_max_value = [12, 15, 8, 14, 18]
 
 def max_value(tab_max_value) :
-    if not(isinstance(tab_max_value, list)) :
+    if not(isinstance(tab_max_value, (list))) :
         raise ValueError('max_value, expected a list as input')
     if (len(tab_max_value) == 0) :
         raise ValueError('max_value, can\'t use an empty list as input')
@@ -100,14 +100,14 @@ print('Valeur max =', max_value(tab_max_value))
 tab = [12, 15, 8, 14, 18, 15]
 
 def reverse_tab(tab) :
-    
+    '''
     if not(isinstance(tab, list)) :
         raise ValueError('reverse_tab, expected a list as input')
     if (len(tab) == 0) :
         raise ValueError('reverse_tab, can\'t use an empty list as input')
     if not(isinstance(tab[0], (int, float))) :
         raise ValueError('reverse_tab, expected a list as input')
-     
+     '''
     # tab.reverse()
   
     buffer = len(tab)
@@ -156,13 +156,13 @@ print('Sentence whithout spaces =', remove_whitespace(sentence))
 
 import random
 
-list = [20, 30, 40, 50 ,60, 70, 80]
+list_random = [20, 30, 40, 50 ,60, 70, 80]
 
-def random_item_selection(list) :
-    nbr_el = len(list)
-    items = random.choices(list, k=nbr_el)
+def random_item_selection(list_random) :
+    nbr_el = len(list_random)
+    items = random.choices(list_random, k=nbr_el)
     return items
-print("Random items selected", random_item_selection(list))
+print("Random items selected", random_item_selection(list_random))
 
 
 
