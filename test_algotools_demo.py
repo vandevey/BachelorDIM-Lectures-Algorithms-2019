@@ -26,7 +26,7 @@ def test_average_working():
     
 # --- Max test ---
                     
-def test_max_working():
+def max_value():
     tab_max=[5,6,7,13,14,15]  
     assert test_s1.test_max_working(tab_max) == 15
     
