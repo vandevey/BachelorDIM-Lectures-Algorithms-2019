@@ -20,7 +20,9 @@ def inc_(x):
    
 # --- Average test ---
         
-tab_list=[5,6,7,13,14,15]       
+     
         
-def test_average_correct():
-    assert test_s1.average_above_zero(tab_list) == 10
+def test_average_working():
+    tab_list=[5,6,7,13,14,15]  
+    test, lastID = test_s1.average_above_zero(tab_list)
+    assert test == 10
